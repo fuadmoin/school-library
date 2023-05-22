@@ -30,28 +30,24 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Math magicians <a name="about-project"></a>
+# 📖 School Library <a name="about-project"></a>
 
-**Math magicians** is a single page app that uses api for a basic calculator.
+**School Library** is a simple project built to track what books are in the library and who borrows them. The app allows the user to add new students or teachers, add new books, and save records of who borrowed a given book and when.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- **HTML, CSS, React, and JavaScript**
+- Ruby
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **html styled with css and javascript**
-- **uses react**
+- **[has a class student and teacher that extends from a parent class called person]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"> </a>
-
-> Check out the live demo for this project [here.](https://fuadmoin.github.io/TODOLIST/dist/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -75,37 +71,16 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git https://github.com/fuadmoin/Math-magicians.git
+  git https://github.com/fuadmoin/school-library.git
 ```
 
-### Install <a name="install"></a>
+### Deployment <a name="#triangular_flag_on_post-deployment"></a>
 
-Install this project with:
-
-```sh
-npm install
-```
-
-### Usage <a name="usage"></a>
-
-```
-  code .
-  npm start
-```
-
-### Run tests <a name="run-tests"></a>
-
-To test, run the following command:
-
-```sh
-npm test
-```
-
-### Deployment <a name="triangular_flag_on_post-deployment"></a>
-
-You can deploy this project using Github-Page.
+You can deploy this project using [Render](https://render.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
 
@@ -113,23 +88,30 @@ You can deploy this project using Github-Page.
 
 - GitHub: [@fuadmoin](https://github.com/fuadmoin)
 - Twitter: [@Fuad01804580](https://twitter.com/Fuad01804580)
-- LinkedIn: [Fuad Moin](https://www.linkedin.com/in/fuad-moin-a7b126259/)
+- LinkedIn: [Fuad Moin](https://www.linkedin.com/in/fuadmoin/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[HTML, CSS, and Javascript will be added]**
-- [ ] **[Api will be added]**
-- [ ] **[users will be able to use the calculator]**
-
+- [ ] **[integration with user inerface]**
+- [ ] **[more methods will be added]**
+- [ ] **[accept data from user]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, [issues](https://github.com/fuadmoin/Math-magicians/issues), and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/fuadmoin/school-library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -137,9 +119,11 @@ If you like this project please consider starring it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- ACKNOWLEDGEMENTS -->
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Microverse](https://www.microverse.org/).
+I would like to thank [Microverse](https://www.microverse.org/) for giving me this chance to work on this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
