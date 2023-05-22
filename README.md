@@ -98,7 +98,7 @@ You can deploy this project using [Render](https://render.com/).
 
 - [ ] **[integration with user inerface]**
 - [ ] **[more methods will be added]**
-- [ ] **[accept data from user]**
+- [ ] **[accept data from users]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
