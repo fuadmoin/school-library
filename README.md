@@ -15,19 +15,15 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Prerequisites](#prerequisites)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 # 📖 School Library <a name="about-project"></a>
@@ -73,10 +69,6 @@ Clone this repository to your desired folder:
   cd my-folder
   git https://github.com/fuadmoin/school-library.git
 ```
-
-### Deployment <a name="#triangular_flag_on_post-deployment"></a>
-
-You can deploy this project using [Render](https://render.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
