@@ -40,6 +40,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **[has a class student and teacher that extends from a parent class called person]**
+- **[uses decorator design to correct the names of people]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
