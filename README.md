@@ -41,6 +41,7 @@
 
 - **[has a class student and teacher that extends from a parent class called person]**
 - **[uses decorator design to correct the names of people]**
+- **[one to many and many to many relationships between classes]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
