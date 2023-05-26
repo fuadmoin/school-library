@@ -1,7 +1,7 @@
 require_relative './person'
 require_relative './classroom'
 class Student < Person
-  attr_accessor :classroom
+  attr_accessor :classroom, :name, :age
 
   def initialize(age, croom, name = 'unknown', parent_permission: true)
     super(age, name, parent_permission: parent_permission)
@@ -18,10 +18,3 @@ class Student < Person
     classroom.add_student(self) unless classroom.students.include?(self)
   end
 end
-
-grade8 = Classroom.new('Grade 8')
-fuad = Student.new(17, grade8, 'Fuad', parent_permission: true)
-fuad.age = 16
-puts fuad.age
-puts fuad.can_use_services
-puts fuad.classroom.label
