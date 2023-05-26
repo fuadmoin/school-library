@@ -219,9 +219,6 @@ end
 
 def list_book_person
   count = 0
-  @books.each do |book|
-    puts "Book #{count += 1} Title: #{book.title} Author: #{book.author}"
-  end
   puts 'Select a person from the following list by number'
   count = 0
   @students.each do |student|
