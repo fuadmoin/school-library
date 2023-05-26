@@ -5,8 +5,6 @@ require_relative './teacher'
 require_relative './student'
 require_relative './classroom'
 
-
-
 def populate
   grade9 = Classroom.new('Grade 9')
   student1 = Student.new(17, grade9, 'std1', parent_permission: true)
