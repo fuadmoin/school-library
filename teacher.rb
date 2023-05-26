@@ -1,5 +1,7 @@
 require_relative './person'
 class Teacher < Person
+  attr_reader :name, :age
+
   def initialize(age, specialization, name = 'unknown', parent_permission: true)
     super(age, name, parent_permission: parent_permission)
     @specialization = specialization
@@ -9,6 +11,3 @@ class Teacher < Person
     true
   end
 end
-
-reviewer = Teacher.new(29, 'Computer Science', parent_permission: false)
-puts reviewer.can_use_services
