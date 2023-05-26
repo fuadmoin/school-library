@@ -22,14 +22,15 @@ def populate
 end
 
 def display_menu
-  system 'cls'
   puts 'Welcome to School Library App!'.center(40, '-')
   puts "\n"
   puts '1 - List all books'
   puts '2 - List all people'
   puts '3 - Add a person'
   puts '4 - Add a book'
-  puts '5 - Exit'
+  puts '5 - Create a rental'
+  puts '6 - List all rentals for a given id.'
+  puts '7 - Exit'
   print 'Enter your choice: '
 end
 
@@ -61,6 +62,18 @@ def list_people
   print 'press r to return to the main menu... : '
   choice2 = gets.chomp
   system 'cls' if %w[r R].include?(choice2)
+end
+
+def list_person
+  count = 0
+  @students.each do |student|
+    puts "Student #{count += 1} Name: #{student.name} ID: #{student.id} "
+  end
+  count = 0
+  @teachers.each do |teacher|
+    puts "Teacher #{count += 1} Name: #{teacher.name} ID: #{teacher.id} "
+  end
+  puts ''
 end
 
 def add_person
@@ -162,4 +175,82 @@ def add_book
       break
     end
   end
+end
+
+def loop_create_rental
+  loop do
+    create_rental
+    system 'cls'
+    puts 'Rental created!'
+    puts '1: Create another rental'
+    puts '2: Return to previous menu'
+    print 'Enter your choice: '
+    choice2 = gets.chomp.to_i
+    if choice2 == 2
+      system 'cls'
+      break
+    end
+    system 'cls'
+  end
+end
+
+def create_rental
+  system 'cls'
+  puts 'Create a rental'.center(32)
+  puts 'Select a book from the following list by number'
+  count = 0
+  @books.each do |book|
+    puts "Book #{count += 1} Title: #{book.title} Author: #{book.author}"
+  end
+  print 'Enter your choice: '
+  book_choice = gets.chomp.to_i
+  list_book_person
+  print 'Enter your choice: '
+  person_choice = gets.chomp.to_i
+  puts 'Date: '
+  date = gets.chomp
+  person = if person_choice <= @students.length
+             @students[person_choice - 1]
+           else
+             @teachers[person_choice - @students.length - 1]
+           end
+  @rentals.push(Rental.new(date, person, @books[book_choice - 1]))
+end
+
+def list_book_person
+  count = 0
+  @books.each do |book|
+    puts "Book #{count += 1} Title: #{book.title} Author: #{book.author}"
+  end
+  puts 'Select a person from the following list by number'
+  count = 0
+  @students.each do |student|
+    puts "Student #{count += 1} Name: #{student.name} Age: #{student.age} "
+  end
+  @teachers.each do |teacher|
+    puts "Teacher #{count += 1} Name: #{teacher.name} Age: #{teacher.age} "
+  end
+end
+
+def list_rentals_by_person_id
+  puts 'List rentals by person  ID'.center(32)
+  puts "\n"
+  puts "Here are available persons with their IDs \n"
+  list_person
+  print 'Enter the ID of the person: '
+  person_id = gets.chomp.to_i
+  puts "\n"
+  puts "Here are the rentals of the person with ID #{person_id} \n"
+  rentals_found = false
+  @rentals.each do |rental|
+    if rental.person.id == person_id
+      puts "Book: #{rental.book.title} Author: #{rental.book.author} \n Rental Date: #{rental.date}"
+      rentals_found = true
+    end
+  end
+  puts 'NO rental records for the provided ID.' unless rentals_found
+  puts "\n"
+  print 'press r to return to the main menu... : '
+  choice2 = gets.chomp
+  system 'cls' if %w[r R].include?(choice2)
 end
